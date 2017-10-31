@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="ht_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>学生会网上报名后台管理</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        body{background-image:url(img/bj.jpg); 
+background-repeat:repeat;background-position:center} 
+        .auto-style1 {
+            width: 100%;
+            height: 582px;
+        }
+        .auto-style2 {
+            width: 146px;
+        }
+        .auto-style4 {
+            height: 14px;
+            text-align: center;
+            font-size: x-large;
+            color: #FFFFFF;
+        }
+        .auto-style7 {
+            width: 146px;
+            height: 70px;
+        }
+        .auto-style9 {
+            width: 146px;
+            height: 329px;
+        }
+        .auto-style11 {
+            height: 19px;
+        }
+        .auto-style12 {
+            height: 19px;
+            text-align: right;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+       
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style2" rowspan="3">
+                    
+                    <asp:ImageButton ID="ImageButton4" runat="server" Height="146px" Width="148px" ImageUrl ="~/img/logo.png" CausesValidation="False" PostBackUrl="~/Default.aspx" />
+                    
+                </td>
+                <td class="auto-style4"><strong>工业信息技术系团总支学生会报名管理系统</strong></td>
+            </tr>
+            <tr>
+                <td class="auto-style11"></td>
+            </tr>
+            <tr>
+                <td class="auto-style12">
+                    <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False" onclick="LinkButton2_Click">登录</asp:LinkButton>
+&nbsp;
+                    <asp:LinkButton ID="LinkButton2" runat="server" CausesValidation="False" onclick="LinkButton3_Click">前台</asp:LinkButton>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style7" valign="top">
+                    &nbsp;</td>
+                <td rowspan="2"  valign="top" > <center> <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder></center></td>
+            </tr>
+            <tr>
+                <td class="auto-style9" valign="top">
+                    &nbsp;</td>
+            </tr>
+            </table>
+       
+    </div>
+    </form>
+</body>
+</html>
